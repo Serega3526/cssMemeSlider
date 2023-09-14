@@ -125,3 +125,13 @@ img{
 .control__inputs:has(#four:checked) ~ .content__controls .control__wrapper{
     transform: translateX(-300%);
 }
+@media (max-width: 768px) {
+    .control__inputs{
+        order: 2;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .content__controls{
+        min-width: 100%;
+    }
+}
