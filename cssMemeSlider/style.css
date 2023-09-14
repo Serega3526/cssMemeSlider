@@ -48,11 +48,12 @@ body{
 }
 .content__wrapper{
     display: flex;
-    flex-direction: column;
     margin: auto;
     background-color: #fff;
     width: 53.4%;
+    height: 60%;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 .content__img-wrapper{
     width: 100%;
@@ -66,19 +67,18 @@ body{
     padding-top: 20px;
     background-color: #dddddd;
     order: 2;
+    overflow: hidden;
 }
 .control__text-block{
     display: flex;
-    width: 31.4rem;
+    width: 57.4rem;
 }
 .control__wrapper{
-    width: 44%;
-    overflow: hidden;
     order: 2;
 }
 .control__text{
     margin-right: 20px;
-    min-width: 30rem;
+    min-width: 56rem;
 }
 .control__inputs{
     order: 3;
@@ -95,15 +95,15 @@ body{
 .control__inputs:has(#four:checked) ~ .content__img-wrapper{
     transform: translateX(-300%);
 }
-.control__inputs:has(#one:checked) ~ .control__wrapper{
+.control__inputs:has(#one:checked) ~ .content__controls .control__wrapper{
     transform: translateX(0%);
 }
-.control__inputs:has(#two:checked) ~ .control__wrapper{
+.control__inputs:has(#two:checked) ~ .content__controls .control__wrapper{
     transform: translateX(-100%);
 }
-.control__inputs:has(#three:checked) ~ .control__wrapper{
+.control__inputs:has(#three:checked) ~ .content__controls .control__wrapper{
     transform: translateX(-200%);
 }
-.control__inputs:has(#four:checked) ~ .control__wrapper{
+.control__inputs:has(#four:checked) ~ .content__controls .control__wrapper{
     transform: translateX(-300%);
 }
