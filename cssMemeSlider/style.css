@@ -67,7 +67,16 @@ body{
 }
 .control__text-block{
     display: flex;
+    width: 31.4rem;
+}
+.control__wrapper{
+    width: 44%;
+    overflow: hidden;
 }
 .control__text{
     margin-right: 20px;
+    min-width: 30rem;
+}
+.content__controls .control__inputs form input:has(#one:checked) ~ .content__img-wrapper{
+    transform: translateX(-100%);
 }
