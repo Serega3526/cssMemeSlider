@@ -37,62 +37,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /*-------------*/
 
-body{
-    background-color: #25282a;
-}
-.wrapper{
-    width: 1440px;
-    height: 100%;
-    display: flex;
+.container{
+    width: 80%;
     margin: 0 auto;
+    display: flex;
 }
-.memes{
-    width: 800px;
-    height: 500px;
-    background-color: #fff;
+.content__wrapper{
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    position: relative;
 }
-p{
-    color: #fff;
-}
-.memes > input {
-    display: none;
-}
-label{
-    color: #fff;
-}
-input{
-    cursor: pointer;
-}
-.memes > input + label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 8px;
-    background: rgba(90, 90, 90, 0.8);
-    border: 2px solid rgba(190, 190, 190, 0.8);
-    cursor: pointer;
-    /* position: relative; */
-    margin-right: 4px;
-    /* top: 110%; */
-    /* transition: background 0.8s ease-out 0s; */
-}
-.memes > input + label:hover {
-    background: rgba(250, 250, 250, 0.8);
-}
-
-.memes > input:checked + label {
-    background: rgba(173, 80, 80, 0.8);
-}
-.memes > div {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
-}
-
-.memes > input:checked + label + div{
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+.content__img-wrapper{
+    width: 400%;
+    height: 100%;
 }
