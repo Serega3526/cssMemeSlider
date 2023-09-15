@@ -70,7 +70,7 @@ body{
     justify-content: space-between;
     order: 2;
     overflow: hidden;
-    max-width: 50%;
+    max-width: 80%;
     padding-bottom: 20px;
     background-color: #dddddd;
 }
@@ -89,9 +89,10 @@ body{
 .control__inputs{
     order: 3;
     margin-left: auto;
-    max-width: 50%;
+    max-width: 20%;
     padding-bottom: 20px;
     background-color: #dddddd;
+    display: flex;
 }
 img{
     width: 100%;
@@ -100,6 +101,37 @@ img{
 }
 .content__img{
     max-width: 100%;
+}
+input{
+    display: none;
+}
+label{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+label span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+label span:hover{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+}
+/* label span:focus{
+    background-color: #948f8f;
+} */
+label span:active{
+    background-color: #c02525;
+}
+label span:checked{
+    background-color: #f11212;
 }
 .control__inputs:has(#one:checked) ~ .content__img-wrapper{
     transform: translateX(0%);
